@@ -1,0 +1,104 @@
+.h-100vh {
+  height: 100vh;
+}
+html{
+  font-size: 16px;
+}
+body {
+  background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  --Softred: hsl(14, 88%, 65%);
+  
+}
+.box {
+  position: absolute;
+  top: 44%;
+  left: 15%;
+}
+.cardbox {
+  background: #fff url(/images/bg-pattern-desktop.svg) no-repeat;
+  background-position: -570px -250px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.item {
+  position: relative;
+  left: -90px;
+}
+.accordion {
+  --bs-accordion-border-color: none !important;
+  --bs-accordion-active-color: #000 !important;
+  --bs-accordion-active-bg: #fff !important;
+  --bs-accordion-active-color: #000 !important;
+  --bs-accordion-active-bg: #fff !important;
+  --bs-accordion-btn-focus-border-color: none !important;
+  --bs-accordion-btn-focus-box-shadow: none !important ;
+  --bs-accordion-btn-icon: url(/images/icon-arrow-down.svg) !important;
+  border-bottom: 1px;
+}
+.accordion-button:not(.collapsed) {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.accordion-button:hover {
+  color: hsl(14, 88%, 65%) !important;
+}
+h1 {
+  font-weight: 800 !important;
+}
+.accordion-button::after {
+  background-image: url(/images/icon-arrow-down.svg) !important;
+}
+.wi-75{
+  width: 60%;
+}
+
+
+@media (max-width: 1440px) {
+  .wi-75{
+    width: 75%;
+  }
+  .box {
+    position: absolute;
+    top: 43%;
+    left: 5%;
+  }
+}
+@media (max-width: 770px) {
+  .item {
+    content: url(/images/illustration-woman-online-mobile.svg);
+    width: 65%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -100%);
+    
+  }
+  .accordion-button:not(.collapsed) {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .wi-75{
+      width: 90%!important ;
+  }
+  
+  h1{
+    font-size: 3rem !important;
+  }
+  #card{
+    margin-top: 150px !important; 
+  }
+  .cardbox {
+   
+    background: #fff url(/images/bg-pattern-mobile.svg) no-repeat;
+    background-size: 75%;
+    background-position: 50%  10px;
+    overflow: visible;
+    border-radius: 15px;
+  }
+  .box{
+    display: none;
+  }
+  html{
+    font-size: 12px !important;
+  }
+}
